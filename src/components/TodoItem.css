@@ -1,0 +1,35 @@
+.todo-item {
+  background: white;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.done .title {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.title {
+  flex: 1;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #e74c3c;
+  transition: transform 0.2s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
